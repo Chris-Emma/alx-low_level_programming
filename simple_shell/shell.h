@@ -6,6 +6,7 @@
 #include <string.h>
 #include <unistd.h>
 #include <stdbool.h>
+#include <sys/wait.h>
 
 void alpha_execute(const char *alpha_string);
 void prompt_exhibit(void);

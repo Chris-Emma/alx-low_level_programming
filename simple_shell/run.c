@@ -4,33 +4,7 @@
  * run_action - executes command
  * @action: command to be executed
  */
-void run_action(const char *action)
-{
-	pid_t child_pid = fork();
 
-	if (child_pid == -1)
-	{
-		perror("fork");
-		exit(EXIT_FAILURE);
-	}
-	else if (child_pid == 0)
-	{
-		execlp(action, action, (char *)NULL);
-		perror("execlp");
-		exit(EXIT_FAILURE);
-	}
-	else
-	{
-		wait(NULL);
-	}
-}
-
-#include "shell.h"
-
-/**
- * run_action - executes command
- * @action: command to be executed
- */
 void run_action(const char *action)
 {
 	pid_t child_pid = fork();
