@@ -2,13 +2,13 @@
 
 /**
  * main - entry point
- * @Return: 0 on success
- * */
+ * Return: 0 on success
+ */
 
 int main(void)
 {
 	char action[224];
-	
+
 	while (1)
 	{
 		prompt_exhibit();

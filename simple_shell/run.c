@@ -20,6 +20,7 @@ void run_action(const char *action)
 		int arg_count = 0;
 
 		char *token = strtok((char *)action, " ");
+
 		while (token != NULL)
 		{
 			args[arg_count++] = token;
